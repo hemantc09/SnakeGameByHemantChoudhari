@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Snake Game By Hemant Choudhari</title>
+    <script src="snake.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="snake.css">
+
+</head>
+
+<body class="bodycss">
+<h1 align="center">Designed by Hemant Choudhari<br>
+&nbspScore:&nbsp; <input id="scoreInput" type="text" value="0" style="font-size: 20px;color: black" disabled>
+Level:&nbsp<input id="levelInput" type="text" value="0" style="font-size: 20px;color: black" disabled>
+</h1>
+<canvas  class="canvascss" id="canvas">
+
+</canvas>
+
+<a class=""></a> <!-- for canvas text-->
+<!--<h1 class="tablecss"><a1 id="restart" class="restart"></a1></h1> &lt;!&ndash; for restart tag add a tag to it&ndash;&gt;-->
+
+<div id="divrestart" class="restarttagcss"><a id="restarttext" href="index.html">Restart</a> </div><!--div for restart -->
+
+<div id="">
+<table class="tablecss" style="visibility: visible;margin-top: 2%">
+    <tr>
+
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><input type="button" id="top" onclick="topdir()" class="myButtontop"></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><input type="button" id="left" onclick="leftdir()" class="myButtonleft"></td>
+        <td></td>
+        <td><input type="button" id="right"  onclick="rightdir()" class="myButtonright"></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><input type="button" id="bottom" onclick="bottomdir()" class="myButtonbottom"></td>
+        <td></td>
+    </tr>
+
+</table>
+</div>
+
+</body>
+</html>
+<script type="text/javascript">
+    function leftdir()
+    {
+       // alert('hello');
+        direction=1;
+
+    }
+    function rightdir()
+    {
+      //  alert('hello');
+        direction=0;
+
+    }
+    function topdir()
+    {
+        //alert('hello');
+        direction=2;
+
+    }
+    function bottomdir()
+    {
+       // alert('hello');
+        direction=3;
+
+    }
+    </script>
